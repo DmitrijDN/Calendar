@@ -52,7 +52,7 @@ namespace Bs.Calendar.DataAccess.Bases
             }
             else
             {
-                _context.Entry(entity).State = System.Data.EntityState.Modified;
+                _context.Entry(entity).State = System.Data.Entity.EntityState.Modified;
             }
 
             _context.SaveChanges();
