@@ -14,12 +14,18 @@
                 <li>
                     @Html.ActionLink("Calendar", "Index", "Home")
                 </li>
-                <li>
-                    @Html.ActionLink("Users", "Index", "Users")
-                </li>
-                <li>
-                    @Html.ActionLink("Room", "Index", "Room")
-                </li>
+                @if (User.IsInRole("Admin"))
+                {
+                    <li>
+                        @Html.ActionLink("Users", "Index", "Users")
+                    </li>
+                }
+                @if (User.IsInRole("Admin"))
+                {
+                    <li>
+                        @Html.ActionLink("Room", "Index", "Room")
+                    </li>
+                }
                 <li>
                     @Html.ActionLink("Book", "Index", "Book")
                 </li>
