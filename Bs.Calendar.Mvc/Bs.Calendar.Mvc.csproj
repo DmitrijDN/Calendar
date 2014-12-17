@@ -217,6 +217,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Calendar\Calendar.css" />
     <Content Include="Content\Calendar\CalendarDay.css" />
     <Content Include="Content\Calendar\CalendarRoom.css" />
@@ -229,6 +233,7 @@
     <Content Include="Content\jquery.timepicker\jquery.timepicker.css" />
     <Content Include="Content\Layout\fonts.css" />
     <Content Include="Content\Rooms\ColorPicker.css" />
+    <Compile Include="App_Start\BootstrapBundleConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\EventController.cs" />
@@ -236,6 +241,7 @@
     <Compile Include="Controllers\UsersController.cs" />
     <Content Include="Content\Layout\layout.css" />
     <Content Include="Content\Layout\list-view.css" />
+    <Content Include="Content\Shared\Header.css" />
     <Content Include="Content\Shared\RoomOrderList.css" />
     <Content Include="Content\Shared\UserColumnList.css" />
     <Content Include="Content\Teams\TeamEdit.css" />
@@ -274,12 +280,15 @@
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Content\themes\jquery-ui-1.10.3.custom.min.css" />
     <Content Include="Content\Users\RoleStateFilterWindow.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\birthday_icon.png" />
     <Content Include="Images\binaryLogo.png" />
     <Content Include="Images\Slider\arrow.png" />
     <Content Include="Images\Slider\highlight.png" />
     <Content Include="Scripts\Books\BookHistoryList.js" />
     <Content Include="Scripts\Books\BooksVm.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Event\CalendarEvent.js" />
     <Content Include="Scripts\Gumby\gumby.init.js" />
     <Content Include="Scripts\Gumby\gumby.js" />
@@ -300,6 +309,11 @@
     <Content Include="Scripts\Home\DayTimeBlock.js" />
     <Content Include="Scripts\Home\Room.js" />
     <Content Include="Scripts\Home\Week.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />

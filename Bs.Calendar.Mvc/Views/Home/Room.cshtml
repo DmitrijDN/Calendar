@@ -1,7 +1,7 @@
-﻿<div class="row invisible-onstart" id="calendar-room" data-bind="visible: isChosen()">
+﻿<div class="container invisible-onstart" id="calendar-room" data-bind="visible: isChosen()">
     
     <div class="calendar-room-container room-sun" data-bind="foreach: days">
-        <div class="row calendar-room-header">
+        <div class="container calendar-room-header">
             <div class="calendar-room-dayname" data-bind="text: dayTitle"></div>
             <div class="room-order-header">
                 <div><strong>8 am</strong></div><div>9 am</div><div>10 am</div><div>11 am</div><div>12 pm</div>
@@ -10,7 +10,7 @@
         </div>
         
         <div class="calendar-room-time-container">
-            <div class="row room-order-container" data-bind="foreach: roomList">
+            <div class="container room-order-container" data-bind="foreach: roomList">
                 <div class="room-order-name" data-bind="text: room.Name"></div>
                 <div class="room-order-time" draggable="false">
                     <div></div><div></div><div></div><div></div><div></div>
