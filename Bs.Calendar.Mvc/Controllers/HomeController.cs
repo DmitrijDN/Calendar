@@ -69,7 +69,12 @@ namespace Bs.Calendar.Mvc.Controllers
 
         public ActionResult List(DateTime from, DateTime to)
         {
-            return Json(_service.RetreiveList(new EventFilterVm{FromDate = from, ToDate = to}, User.Identity.Name), JsonRequestBehavior.AllowGet);
+
+            if (Request.IsAuthenticated)
+            {
+                return Json(_service.RetreiveList(new EventFilterVm { FromDate = from, ToDate = to }, User.Identity.Name), JsonRequestBehavior.AllowGet);
+            }
+            return null;
         }
     }
 }
